@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home Page {% endblock title %}
+
+{% block content %}
+
+    <div class="aboutMe" id="aboutMe">
+        <div class="photo">
+
+        </div>
+        <div class="aboutMeText">
+            <h1>About Me</h1>
+            <h5>Full Stack Developer</h5>
+            <p>I'm a passionate Developer who genuinely enjoys writing code—even in my free time. Whether it's building side projects or experimenting with new tech, I love the process of solving problems and creating something meaningful. Outside of code, I play guitar and sing—music is another creative outlet that keeps me sharp and inspired. For me, both coding and music are about flow, expression, and constantly leveling up.</p>
+            <br>
+            <p class="skills">JavaScript</p>
+            <p class="skills">Python</p>
+            <p class="skills">ReactJS</p>
+            <p class="skills">Django</p>
+            <p class="skills">Figma</p>
+            <p class="skills">TypeScript</p>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="card">
+            <img src="https://picsum.photos/200" alt="">
+            <h5 class="projectName">Project name</h5>
+            <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
+            <em class="projectDescription">2025</em>
+            <div>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200" alt="">
+            <h5 class="projectName">Project name</h5>
+            <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
+            <em class="projectDescription">2025</em>
+            <div>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200" alt="">
+            <h5 class="projectName">Project name</h5>
+            <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
+            <em class="projectDescription">2025</em>
+            <div>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+                <p class="skills">Skill/technology</p>
+
+            </div>
+        </div>
+    </div>
+    <div id="experience">
+
+        <h5 class="experienceTitle">Experience</h5>
+
+        <div class="experienceCards">
+            <h5>Some Experience</h5>
+            <fieldset>
+                <legend>
+                    <h6>Course name / Job Position</h6>
+                </legend>
+                <div>
+                    <ul>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                    </ul>
+                </div>
+                
+            </fieldset>
+            <em class="experienceDate">Month YYYY - Month YYYY</em>
+            <p class="skills">Skill/technology</p>
+            <p class="skills">Skill/technology</p>
+            <p class="skills">Skill/technology</p>
+        </div>
+        <div class="experienceCards" id="rightCard">
+            <h5>Some Experience</h5>
+            <fieldset>
+                <legend>
+                    <h6>Course name / Job Position</h6>
+                </legend>
+                <div>
+                    <ul>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                    </ul>
+                </div>
+                
+            </fieldset>
+            <em class="experienceDate">Month YYYY - Month YYYY</em>
+            <p class="skills">Skill/technology</p>
+            <p class="skills">Skill/technology</p>
+            <p class="skills">Skill/technology</p>
+        </div>
+        <div class="experienceCards">
+            <h5>Some Experience</h5>
+            <fieldset>
+                <legend>
+                    <h6>Course name / Job Position</h6>
+                </legend>
+                <div>
+                    <ul>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                        <li>resume style bullet point</li>
+                    </ul>
+                </div>
+                
+            </fieldset>
+            <em class="experienceDate">Month YYYY - Month YYYY</em>
+            <p class="skills">Skill/technology</p>
+            <p class="skills">Skill/technology</p>
+            <p class="skills">Skill/technology</p>
+        </div>
+    </div>
+    <div id="contact">
+        <br>
+        <h5>Contact Me</h5>
+        <br>
+        <p>Have a question or want to work together? Send me a message!</p>
+        <br>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="input-container">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name:</label>
+            </div>
+            
+            <div class="input-container">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+            </div>
+
+            <div class="input-container">
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Message:</label>
+            </div>
+            {% if success %}
+                <p class="success-message">Message sent successfully!</p>
+            {% endif %}
+            <div class="btnContainer">
+                <button class='contactBtn' type="submit">Send</button>
+            </div>
+        </form>
+
+
+    </div>
+
+{% endblock content %}
