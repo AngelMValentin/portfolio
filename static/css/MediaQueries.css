@@ -57,6 +57,7 @@
         margin: 20px auto 20px auto;
         width: 300px;
         height: auto;
+        padding-bottom: 10px;
     }
     .card img {
         height: 150px;
@@ -139,9 +140,13 @@
         margin: 20px auto 20px auto;
         width: 45%;
         height: auto;
+        padding-bottom: 10px;
     }
     .card img {
         height: 12rem;
+    }
+    .projectDescription {
+        margin: 10px;
     }
 }
 
@@ -186,11 +191,15 @@
 
     .card {
         margin: 20px auto 20px auto;
-        width: 30%;
+        width: 500px;
         height: auto;
+        padding-bottom: 10px;
     }
     .card img {
         height: 12rem;
+    }
+    .projectDescription {
+        margin: 10px;
     }
 
 }

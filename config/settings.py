@@ -17,14 +17,16 @@ import environ
 
 # create a secure connection
 os.environ["SSL_CERT_FILE"] = certifi.where()
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # load env file
 env = environ.Env()
-environ.Env.read_env()
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -51,7 +53,11 @@ INSTALLED_APPS = [
 
     'pages',
     'content',
+    'captcha',
 ]
+
+RECAPTCHA_PUBLIC_KEY = env('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = env('RECAPTCHA_PRIVATE_KEY')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

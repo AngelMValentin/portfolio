@@ -106,6 +106,12 @@ h5 {
     width: 100%;
     border-radius: 16px 16px 0 0;
 }
+.card a {
+    text-decoration: none;
+}
+.projectDescription {
+    color: var(--font-color);
+}
 
 .projectName {
     font-size: 1.5rem;
@@ -138,7 +144,7 @@ h5 {
 #rightCard {
     text-align: right;
 }
-#rightCard fieldset {
+#rightCard legend {
     text-align: right !important;
 }
 #rightCard h6 {

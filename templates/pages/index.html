@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Home Page {% endblock title %}
+{% block title %}My Portfolio{% endblock title %}
 
 {% block content %}
 
@@ -14,9 +14,15 @@
             <h5>Full Stack Developer</h5>
             <p>I'm a passionate Developer who genuinely enjoys writing code—even in my free time. Whether it's building side projects or experimenting with new tech, I love the process of solving problems and creating something meaningful. Outside of code, I play guitar and sing—music is another creative outlet that keeps me sharp and inspired. For me, both coding and music are about flow, expression, and constantly leveling up.</p>
             <br>
+            <p class="skills">HTML/CSS</p>
             <p class="skills">JavaScript</p>
+            <p class="skills">JQuery</p>
             <p class="skills">Python</p>
             <p class="skills">ReactJS</p>
+            <p class="skills">Flask</p>
+            <p class="skills">MongoDB</p>
+            <p class="skills">Bootstrap</p>
+            <p class="skills">RESTful API</p>
             <p class="skills">Django</p>
             <p class="skills">Figma</p>
             <p class="skills">TypeScript</p>
@@ -24,47 +30,17 @@
     </div>
     <div id="projects">
         <div class="card">
-            <img src="https://picsum.photos/200" alt="">
-            <h5 class="projectName">Project name</h5>
-            <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
-            <em class="projectDescription">2025</em>
+            <a href="https://surgical-tech-companion-c95c25da5f52.herokuapp.com/home/">
+                <img src="{% static 'img/surgical-tech-companion-homepage.png' %}" alt="">
+                <h5 class="projectName">Surgical Tech Companion Beta</h5>
+                <p class="projectDescription">This app helps surgical technologists and surgical assistants pass AST / NBSTSA certification exams. It includes flashcards (480 based on official study materials), drag and drop surgical tray setups (coming soon), SurgiChat AI assistant (coming soon), surgical instrument study (3D models, dynamic descriptions, and quizzes), and anatomy study (3D models, dynamic descriptions, and quizzes).</p>
+                <em class="projectDescription">2025</em>
+            </a>
             <div>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/200" alt="">
-            <h5 class="projectName">Project name</h5>
-            <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
-            <em class="projectDescription">2025</em>
-            <div>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/200" alt="">
-            <h5 class="projectName">Project name</h5>
-            <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
-            <em class="projectDescription">2025</em>
-            <div>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
-                <p class="skills">Skill/technology</p>
+                <p class="skills">Django</p>
+                <p class="skills">CSS</p>
+                <p class="skills">SQlite</p>
+                <p class="skills">AWS S3 Bucket</p>
 
             </div>
         </div>
@@ -74,99 +50,124 @@
         <h5 class="experienceTitle">Experience</h5>
 
         <div class="experienceCards">
-            <h5>Some Experience</h5>
+            <h5>Surgical Tech Companion App</h5>
             <fieldset>
                 <legend>
-                    <h6>Course name / Job Position</h6>
+                    <h6>Full Stack Software Engineer</h6>
                 </legend>
                 <div>
                     <ul>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
+                        <li>Building an interactive web app to help surgical technologists study for certification exams.</li>
+                        <li>Utilizing Django for backend development and API integration, and SQLite3 for database management.</li>
+                        <li>Designing the front-end with vanilla CSS for responsive, mobile-friendly layouts.</li>
+                        <li>Collaborating with surgical technologists to create a curriculum that meets industry standards and educational needs.</li>
+                        <li>Integrating 3D models to enhance user engagement and provide realistic, interactive learning experiences.</li>
+                        <li>Continuously iterating and improving features for user experience and educational effectiveness.</li>
                     </ul>
                 </div>
                 
             </fieldset>
-            <em class="experienceDate">Month YYYY - Month YYYY</em>
-            <p class="skills">Skill/technology</p>
-            <p class="skills">Skill/technology</p>
-            <p class="skills">Skill/technology</p>
+            <em class="experienceDate">April 2025 - June 2025</em>
+            <p class="skills">Django</p>
+            <p class="skills">CSS</p>
+            <p class="skills">SQlite</p>
+            <p class="skills">AWS S3 Bucket</p>
         </div>
         <div class="experienceCards" id="rightCard">
-            <h5>Some Experience</h5>
+            <h5>San Diego Global Knowledge University</h5>
             <fieldset>
                 <legend>
-                    <h6>Course name / Job Position</h6>
+                    <h6>Full Stack Software Engineer</h6>
                 </legend>
                 <div>
                     <ul>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
+                        <li>Developed and deployed full-stack web applications using HTML5, CSS3, JavaScript, React.js, and Python (Flask/Django), applying responsive design, user experience principles, and modern front-end frameworks to ensure mobile-friendly performance.</li>
+                        <li>Built and connected RESTful APIs using Flask and Django frameworks, integrating MongoDB and PostgreSQL databases to persist user data, process transactions, and enable CRUD operations in e-commerce-style web applications.</li>
+                        <li>Collaborated in Agile, Scrum-based environments, utilizing Git, GitHub, and project management strategies to iteratively design, build, test, and present scalable software products through Capstone projects.</li>
+                        <li>Applied computer science principles including data structures, algorithms, OOP, and design patterns to improve application logic, optimize runtime performance, and architect maintainable solutions across the software development lifecycle.</li>
                     </ul>
                 </div>
                 
             </fieldset>
-            <em class="experienceDate">Month YYYY - Month YYYY</em>
-            <p class="skills">Skill/technology</p>
-            <p class="skills">Skill/technology</p>
-            <p class="skills">Skill/technology</p>
+            <em class="experienceDate">October 2024 - May 2025</em>
+            <p class="skills">HTML/CSS</p>
+            <p class="skills">JavaScript</p>
+            <p class="skills">JQuery</p>
+            <p class="skills">Python</p>
+            <p class="skills">ReactJS</p>
+            <p class="skills">Flask</p>
+            <p class="skills">MongoDB</p>
+            <p class="skills">Bootstrap</p>
+            <p class="skills">RESTful API</p>
+            <p class="skills">Django</p>
+            <p class="skills">Figma</p>
+            <p class="skills">TypeScript</p>
         </div>
         <div class="experienceCards">
-            <h5>Some Experience</h5>
+            <h5>United States Marine Corps</h5>
             <fieldset>
                 <legend>
-                    <h6>Course name / Job Position</h6>
+                    <h6>AH-1Z/UH-1Y Airframes Aviation Mechanic</h6>
                 </legend>
                 <div>
                     <ul>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
-                        <li>resume style bullet point</li>
+                        <li>Awarded the Navy Marine Corps Accommodation Medal for resolving a critical flight control issue, demonstrating advanced problem-solving skills in high-pressure environments.</li>
+                        <li>Held the prestigious Collateral Duty Inspector and Collateral Duty Quality Assurance Representative billets, ensuring the quality and safety of aircraft maintenance and repairs, analogous to code reviews and quality assurance in software development.</li>
+                        <li>Recognized by the Commandant of the Marine Corps for exceptional performance as an Aviation Mechanic, reinforcing leadership, dedication, and attention to detail in a technical environment.</li>
+                        <li>Cross-trained in Avionics and Powerplants, expanding technical expertise and adaptability across multiple systems.</li>
+                        <li>Led and participated in multiple detachments to recover aircraft following emergency landings across the U.S., showcasing teamwork, problem-solving under pressure, and operational readiness.</li>
+                        <li>Collaborated with cross-functional teams in aviation maintenance operations, applying Agile principles and iterative problem-solving similar to software development practices.</li>
                     </ul>
                 </div>
                 
             </fieldset>
-            <em class="experienceDate">Month YYYY - Month YYYY</em>
-            <p class="skills">Skill/technology</p>
-            <p class="skills">Skill/technology</p>
-            <p class="skills">Skill/technology</p>
+            <em class="experienceDate">November 2017 - November 2022</em>
+            <p class="skills">Attention to Detail</p>
+            <p class="skills">Systems Thinking</p>
+            <p class="skills">High-Stakes Problem Solving Under Pressure</p>
+            <p class="skills">Discipline and Work Ethic</p>
+            <p class="skills">Communication and Team Coordination</p>
+            <p class="skills">Security and Operational Awareness</p>
         </div>
     </div>
     <div id="contact">
         <br>
+        {{form.media}}
         <h5>Contact Me</h5>
         <br>
         <p>Have a question or want to work together? Send me a message!</p>
         <br>
         <form action="" method="post">
             {% csrf_token %}
+            
             <div class="input-container">
-                <input type="text" id="name" name="name" required>
-                <label for="name">Name:</label>
+                {{ form.name }}
+                <label for="{{ form.name.id_for_label }}">Name:</label>
             </div>
             
             <div class="input-container">
-                <input type="email" id="email" name="email" required>
-                <label for="email">Email:</label>
+                {{ form.email }}
+                <label for="{{ form.email.id_for_label }}">Email:</label>
             </div>
-
+            
             <div class="input-container">
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <label for="message">Message:</label>
+                {{ form.message }}
+                <label for="{{ form.message.id_for_label }}">Message:</label>
             </div>
+        
+            <div class="input-container">
+                {{ form.captcha }}
+                {% if form.errors.captcha %}
+                    <p class="error">{{ form.errors.captcha.0 }}</p>
+                {% endif %}
+            </div>
+        
             {% if success %}
                 <p class="success-message">Message sent successfully!</p>
             {% endif %}
+        
             <div class="btnContainer">
-                <button class='contactBtn' type="submit">Send</button>
+                <button class="contactBtn" type="submit">Send</button>
             </div>
         </form>
 
