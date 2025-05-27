@@ -41,7 +41,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'https://angelvalentinportfolio-87d4d4b5fcbb.herokuapp.com/'
+    'angelvalentinportfolio-87d4d4b5fcbb.herokuapp.com'
 ]
 
 
