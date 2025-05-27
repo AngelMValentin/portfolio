@@ -2,7 +2,12 @@ asgiref==3.8.1
 certifi==2025.4.26
 Django==5.2.1
 django-environ==0.12.0
+django-ranged-response==0.2.0
 django-recaptcha==4.1.0
+gunicorn==23.0.0
+packaging==25.0
 pillow==11.2.1
+psycopg2-binary==2.9.10
 python-environ==0.4.54
 sqlparse==0.5.3
+whitenoise==6.9.0
