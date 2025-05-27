@@ -39,6 +39,8 @@ SECRET_KEY = 'django-insecure-$y4j!f_jh$d%#-jzufe^2be&sg7h3*o@tcv88ea3hd$=iy@#oi
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
     'https://angelvalentinportfolio-87d4d4b5fcbb.herokuapp.com/'
 ]
 
